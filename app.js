@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// Carrega o banco de dados de músicas
+
 const sampleDatabase = JSON.parse(
   fs.readFileSync(path.join(__dirname, 'songs.json')),
 );
@@ -18,3 +18,4 @@ function findSample() {
     output.innerText = `Desculpe, a música "${songName}" não foi encontrada no banco de dados. Tente outra música famosa!`;
   }
 }
+
